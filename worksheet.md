@@ -79,11 +79,11 @@ There you have it; all your hardware is complete. It's now time for the coding!
 
 1. In the desktop area of your Raspberry Pi, open up a LX Terminal, either from the dropdown menu, or by double clicking on the 'LXTerminal' icon.
 
-1. Once the LXTerminal is opened, type in sudo idle3 &  and press enter. This will (in time) open up a “Python Shell'.
+1. Once the LXTerminal is opened, type in `sudo idle3 &` and press `Enter`. This will (in time) open up a "Python Shell".
 
-1. In this Python Shell go to file  new window. This opens up a place where you can actually write in your python code. It's called a (what is it called?)
+1. In this Python Shell go to `File -> New Window`. This opens up a place where you can actually write in your python code. It's called a (what is it called?)
 
-1. It's good practice to save this file before you type anything important. To save go to file  save as, then type in the name you want to save the file as, such as 'Balloon Pi-tay Popper', and click 'save'. Now you can get coding!
+1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in the name you want to save the file as, such as 'balloon', and click `Save`. Now you can get coding!
 
 1. Start by importing the Raspberry Pi GPIO pin library, to do this simply type:
 
