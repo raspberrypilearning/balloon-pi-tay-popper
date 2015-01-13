@@ -10,14 +10,14 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 
 ### Hardware
 
-- 1 x Solderless Breadboard
-- 5 x Male-to-female jumper cables
-- 4 x Male-to-male jumper cables (try Pimoroni; LINK: http://shop.pimoroni.com/products/jumper-lead-selection)
+- 1 x Solderless breadboard
+- 5 x Male-to-female jumper leads
+- 4 x Male-to-male jumper leads
 - 1 x Push-to-Make Switch
-- Battery Snap (try Pimoroni; LINK: http://shop.pimoroni.com/products/pp3-battery-snap)
-- 6m x 2 Core Speaker Cable, also called Bell Wire (try Maplins; LINK: http://www.maplin.co.uk/p/speaker-cable-figure-of-8-6-x-3mm-white-priced-per-metre-xr60q )
-- 12R resistors (try ???)
-- 3 x P2N2222A Transistors (try Pimoroni; LINK: http://shop.pimoroni.com/products/bipolar-transistor)
+- 1 x Battery Snap
+- 6m x 2 Core Speaker Cable (Bell Wire)
+- Some 12R resistors
+- 3 x P2N2222A Transistors
 
 ### Extras
 
