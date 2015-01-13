@@ -17,11 +17,12 @@ GPIO.setup(balloon_3, GPIO.OUT)
 touched = GPIO.LOW
 
 print("Ready...")
-i = 1
-while i == 1:
+
+while True:
     if GPIO.input(button) == touched:
         print("Button Pushed")
         sleep(1)
+
         GPIO.output(balloon_1, True)
         print('Balloon 1')
         sleep(5)
@@ -36,10 +37,6 @@ while i == 1:
         print('Balloon 3')
         sleep(5)
         GPIO.output(balloon_3, False)
-        i += 1
-    else:
-        GPIO.output(2, False)
-        GPIO.output(3, False)
-        GPIO.output(4, False)
+        break
 
 GPIO.cleanup()

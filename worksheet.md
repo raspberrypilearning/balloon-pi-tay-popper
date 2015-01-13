@@ -181,14 +181,14 @@ There you have it; all your hardware is complete. It's now time for the coding!
 1. Now you can write the code that will switch on your transistors, which in turn will make the balloons pop. First of all we only need the balloons to pop once so to ensure this is the case, add a new line and type the following:
 
     ```python
-    i = 1
-    while i == 1:
+    while True:
         if GPIO.input(button) == touched:
             print("Button Pushed")
             sleep(1)
+            break
     ```
 
-    This block of code is designed to test the effect of the button. If checks to see if the button has been pressed, and prints `Button Pushed` when it has been.
+    This block of code is designed to test the effect of the button. `while True` means "keep going forever" and it checks to see if the button has been pressed, and prints `Button Pushed` when it has been, then `break` ends the loop.
 
 1. Add this line to the very bottom of your code (with no indentation):
 
@@ -200,7 +200,7 @@ There you have it; all your hardware is complete. It's now time for the coding!
 
 1. Save the code with `Ctrl + S` and run with `F5`. Press the button and you should see `Button Pushed` printed to the screen.
 
-1. Now for the outputs. You'll need to add all the following lines after (and in line with) `sleep(1)`, leaving the `GPIO.cleanup()` line below:
+1. Now for the outputs. You'll need to add all the following lines between `sleep(1)` and the `break` line:
 
     ```python
     GPIO.output(balloon_1, True)
@@ -223,24 +223,6 @@ There you have it; all your hardware is complete. It's now time for the coding!
     This code will switch each of the output pins on, wait 5 seconds, turn then it off again and move on to the next one. This will result in each of the balloons exploding in sequence, five seconds apart.
 
     Note: the five seconds is needed for the resistor to get hot enough in order to pop the balloons!
-
-1. So the above is for when the button is pushed, but you also need to give an option for when the button isn't pushed. So on the next line, unindent and type:
-
-    ```python
-    else:
-        GPIO.output(2, False)
-        GPIO.output(3, False)
-        GPIO.output(4, False)
-    ```
-
-    So that the `if` and `else` line up, like so:
-
-    ```python
-    if ...:
-        GPIO...
-    else:
-        GPIO...
-    ```
 
 1. Save your program again with `Ctrl + S`.
 
