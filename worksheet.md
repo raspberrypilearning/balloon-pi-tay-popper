@@ -46,7 +46,7 @@ A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by 
 
     ![](images/transistor.png)
 
-1. Now you know which lead is which, we need to wire up the transistor; gently separating the leads will help with this. Carefully insert the leads into holes in the same column (i.e. column 'i') on your breadboard. Try and leave an empty row between each lead if you can.
+1. Now you know which lead is which, we need to wire up the transistor; gently separating the leads will help with this. Carefully insert the leads into holes in the same column (i.e. column 'D') on your breadboard.
 
     ![](images/step2_point2_transistor.jpg)
 
@@ -54,13 +54,15 @@ A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by 
 
     ![](images/step2_point3.jpg)
 
-1. In order to complete the circuit coming from that GPIO pin we need to connect it to ground. So, using a male-to-male jumper cable, insert one end into the same row as the Emitter lead of the transistor and the other to the ground rail on your breadboard (that's the one of the columns that has a '-' sign on it (they're usually at the end of the board, and are usually black). Then take a female-to-male jumper cable and insert one end again into this ground rail and attach the other end onto a ground GPIO pin on your Raspberry Pi (so that's any pin with a '– ' sign or labelled GND - see the earlier diagram).
+1. In order to complete the circuit coming from that GPIO pin we need to connect it to ground. So, using a male-to-male jumper cable, insert one end into the same row as the Emitter lead of the transistor and the other to the ground rail on your breadboard (that's the one of the columns that has a '-' sign on it (they're usually at the end of the board, and are usually black).
 
     ![](images/step2_point4a.jpg)
 
-    ![](images/step2_point4b.jpg)
+Then take a female-to-male jumper cable and insert one end again into this ground rail and attach the other end onto a ground GPIO pin on your Raspberry Pi (so that's any pin with a '– ' sign or labelled GND - see the earlier diagram).
 
-    The circuit is now complete between GPIO PIN number 2, through the base lead of transistor, onto the emitter lead and then back to ground. This circuit is our low voltage circuit, but as we said before we also need a high(er) voltage circuit to heat up the resistor enough. . 
+![](images/step2_point4b.jpg)
+
+The circuit is now complete between GPIO PIN number 2, through the base lead of transistor, onto the emitter lead and then back to ground. This circuit is our low voltage circuit, but as we said before we also need a high(er) voltage circuit to heat up the resistor enough. . 
 
 ## Wire Up the Higher Voltage Circuit
 
