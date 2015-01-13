@@ -1,0 +1,3 @@
+By creating a balloon popping circuit with your Raspberry Pi you will learn:
+
+- How to...
