@@ -217,7 +217,6 @@ There you have it; all your hardware is complete. It's now time for the coding!
     print('Balloon 3')
     sleep(5)
     GPIO.output(balloon_3, False)
-    i += 1
     ```
 
     This code will switch each of the output pins on, wait 5 seconds, turn then it off again and move on to the next one. This will result in each of the balloons exploding in sequence, five seconds apart.
