@@ -1,3 +1,6 @@
 By creating a balloon popping circuit with your Raspberry Pi you will learn:
 
-- How to...
+- How to wire up a circuit
+- What transistors are used for
+- How to use a push button to control the current
+- How to use Python code to control the Pi's GPIO pins to heat up a resistor enough to pop a balloon!
