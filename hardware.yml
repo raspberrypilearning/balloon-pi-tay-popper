@@ -7,8 +7,8 @@
 - name: 4 x Male-to-male jumper leads
   img: jumper-male-to-male
   url: http://shop.pimoroni.com/products/jumper-jerky
-- name: 1 x Push-to-Make Switch
-  img: push-to-make-switch
+- name: 1 x Tactile Button
+  img: tactile-button
   url: http://www.maplin.co.uk/p/125v-05a-sub-miniature-push-to-make-switch-red-jm47b
 - name: 1 x Battery Snap
   img: battery-snap
