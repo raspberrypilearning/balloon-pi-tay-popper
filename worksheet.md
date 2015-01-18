@@ -112,9 +112,9 @@ A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by 
 
 Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right).
 
-    [Note: this is true for P2N2222A transistor, but others transistors may have their leads in different positions]
+[Note: this is true for P2N2222A transistor, but others transistors may have their leads in different positions]
 
-    Like this:
+Like this:
 
     ![](images/transistor.png)
 
@@ -128,7 +128,7 @@ Hold your transistor up and you'll see that it's a semi-circle shape, with three
 
     ![](images/connect-transistor.png)
 
-## Connect the 9V battery and complete the circuit
+## Connect the balloon
 
 Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot enough to pop the balloon!
 
@@ -198,7 +198,7 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
     ![](images/second-transistor-resistor.png)
 
     That's it for the wiring - but you can add more balloons if you like!
-e
+
 ## Code more balloons
 
 Now we'll return to the code and make a few small adjustments to make it pop more balloons!
