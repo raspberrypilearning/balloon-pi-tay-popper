@@ -116,7 +116,7 @@ Hold your transistor up and you'll see that it's a semi-circle shape, with three
 
 Like this:
 
-    ![](images/transistor.png)
+![](images/transistor.png)
 
 1. Carefully place the transistor onto the breadboard with the flat side facing the ground rail like so:
 
@@ -227,7 +227,7 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
     GPIO.output(balloon, False)
     ```
 
-    We'll use
+    We'll use:
 
     ```python
     for balloon in balloons:
