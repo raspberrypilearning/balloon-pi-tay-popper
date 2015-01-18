@@ -2,9 +2,81 @@
 
 To pop balloons use may usually a pin. Here you'll be doing the same, but using a GPIO 'Pin' on your Raspberry Pi, not the pin you might be thinking of!
 
-## Set Up the Balloon Poppers
+## Wire up a button
 
-We're going to be using resistors to make the balloons pop. Resistors are electrical components that reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately over-heating a resistor in order to pop a balloon. But, before you can do that you need to wire up the resistor:
+    First we'll wire up our push button to the Raspberry Pi.
+
+1. Take a male-to-female jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
+
+    ![](images/connect-ground-rail.png)
+
+1. Place the push button on the breadboard and connect one of its legs to the ground rail, and one to GPIO pin 14:
+
+    ![](images/connect-button.png)
+
+## Test the button with code
+
+Now we've connected a button, we'll activate the button with some Python code.
+
+1. Open up LXTerminal from the desktop or application menu.
+
+1. Once the LXTerminal is opened, type in `sudo idle3 &` and press `Enter`. This will open up a Python Shell with super user permissions (you need these to access the GPIO pins).
+
+1. In this Python Shell go to `File -> New Window` to open a new Python file.
+
+1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in `balloon.py`, and click `Save`. Now you can get coding!
+
+1. Start by importing the Raspberry Pi GPIO library. Write the following line in your Python file:
+
+    ```python
+    import RPi.GPIO as GPIO
+    ```
+
+1. Next leave a new line space to separate your imports from your main code, and add a line to set the GPIO pin mode:
+
+    ```python
+    GPIO.setmode(GPIO.BCM)
+    ```
+
+    This states that you'll be using the BCM (Broadcom) numbering system to communicate with the GPIO pins, rather than the BOARD numbering system.
+
+1. Also add a line to turn GPIO warnings off:
+
+    ```python
+    GPIO.setwarnings(False)
+    ```
+
+    This means that when you run the script multiple times, it won't tell you off for setting the same pins up again.
+
+1. Now you'll tell the Raspberry Pi which GPIO pin you'll use for the button. Leave another line break and add the following lines:
+
+    ```python
+    button = 14
+    ```
+
+1. Leave another line break and set up the GPIO pin your push button is connected to (GPIO pin 14) as an input device:
+
+    ```python
+    GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
+    ```
+
+    This tell the Raspberry Pi to treat GPIO pin 14 (the one the button will be connected to) as a 'pulled up' input device.
+
+1. Now add the following lines:
+
+    ```python
+    print("Ready...")
+    GPIO.wait_for_edge(button, GPIO.FALLING)
+    print("Pop!")
+    ```
+
+    This will print "Ready, then wait for the button to be pressed, then print "Pop!" which later will be our balloon popping!
+
+1. Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button and you should see `Pop!` printed to the screen.
+
+## Set Up the Balloon Popper
+
+We're going to be using a resistor to make the balloon pop. Resistors are electrical components that reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately over-heating a resistor in order to pop a balloon. But, before you can do that you need to wire up the resistor:
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
@@ -24,7 +96,7 @@ We're going to be using resistors to make the balloons pop. Resistors are electr
 
     ![](images/step1_point2_tapedresistor.jpg)
 
-1. Now, take some more electrical tape (is doesn't matter what colour) and tape the resistor firmly onto the most stretched part of the balloon (that's the balloon's side, see picture). It's important that this resistor is firmly touching the balloon, so stick it on carefully.
+1. Now, take some more electrical tape (it doesn't matter what colour) and tape the resistor firmly onto the most stretched part of the balloon (that's the balloon's side, see picture). It's important that this resistor is firmly touching the balloon, so stick it on carefully.
 
     ![](images/step1_point4_positionofresistor.jpg)
 
@@ -32,13 +104,13 @@ We're going to be using resistors to make the balloons pop. Resistors are electr
 
 1. Now tie some string onto the knot of your balloon and hang it from the ceiling using tape or tack.
 
-## Wire Up the Low Voltage Circuit
+## Connect the transistor
 
 The voltage of a circuit is the amount of 'push' the current has; a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistors hot enough to pop the balloons, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use what's called a Transistor.
 
 A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow, but it's important that they're wired up correctly.
 
-1. Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right).
+Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right).
 
     [Note: this is true for P2N2222A transistor, but others transistors may have their leads in different positions]
 
@@ -46,197 +118,129 @@ A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by 
 
     ![](images/transistor.png)
 
-1. Now you know which lead is which, we need to wire up the transistor; gently separating the leads will help with this. Carefully insert the leads into holes in the same column (i.e. column 'D') on your breadboard.
+1. Carefully place the transistor onto the breadboard with the flat side facing the ground rail like so:
 
-    ![](images/step2_point2_transistor.jpg)
+    ![](images/place-transistor.png)
 
-1. You now need to wire up your transistor to a GPIO pin on your Raspberry Pi. These pins each have different numbers, so look at the diagram below and figure out which GPIO pin on your Raspberry Pi is which number. We want GPIO pin number 2. So take a male-to-female jumper cable and connect the female end onto GPIO pin number 2 on your Raspberry Pi, then insert the male end into the breadboard. It needs to connect with the Base lead of the transistor, so insert it into the same row as that (remember the Base lead is the middle lead on the transistor).
+    Be sure to place one leg in each hole in the same row.
 
-    ![](images/step2_point3.jpg)
+1. Now connect the end leg of the transistor to the ground rail and the middle leg to GPIO pin 2 on the Raspberry Pi:
 
-1. In order to complete the circuit coming from that GPIO pin we need to connect it to ground. So, using a male-to-male jumper cable, insert one end into the same row as the Emitter lead of the transistor and the other to the ground rail on your breadboard (that's the one of the columns that has a '-' sign on it (they're usually at the end of the board, and are usually black).
+    ![](images/connect-transistor.png)
 
-    ![](images/step2_point4a.jpg)
+## Connect the 9V battery and complete the circuit
 
-Then take a female-to-male jumper cable and insert one end again into this ground rail and attach the other end onto a ground GPIO pin on your Raspberry Pi (so that's any pin with a '– ' sign or labelled GND - see the earlier diagram).
+Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot enough to pop the balloon!
 
-![](images/step2_point4b.jpg)
+1. Place the battery in the battery snap and connect its black lead into the ground rail and the red lead into the power rail on your breadboard - that's the red one adjacent to the ground rail.
 
-The circuit is now complete between GPIO PIN number 2, through the base lead of transistor, onto the emitter lead and then back to ground. This circuit is our low voltage circuit, but as we said before we also need a high(er) voltage circuit to heat up the resistor enough. . 
+    ![](images/connect-battery-snap.png)
 
-## Wire Up the Higher Voltage Circuit
+1. We want this circuit to go through the resistor attached to the balloon. Connect it to the breadboard in the space between the button and the transistor:
 
-For this high(er) voltage circuit, we're going to use a 9 volt battery. 
+    ![](images/step3_point2.png)
 
-1. Attach a battery snap onto a 9 volt battery and place the black lead into the ground rail (the same one as you used before) and the red lead into the power rail on your breadboard - that's the red one, also usually labelled with a '+' sign.
+    This circuit is now complete, the current will flow from the battery, through the resistor, to the collector leg of the transistor, out the Emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
 
-    ![](images/step3_point1.jpg)
+## Add balloon to the code
 
-1. We want this circuit to go through the resistor that you wired up in Step 1. So, take the wires with the resistor attached and with the free ends, insert the one with the red tape on into the positive (yes, the same one you just put the battery lead in) and insert the lead with the black tape on into the same row as the Collector lead of the transistor.
+Now we've completed our circuit we'll need to change our code to trigger the transistor to allow flow through the resistor, which will pop the balloon.
 
-    ![](images/step3_point2.jpg)
-
-1. This circuit is now complete, the current will flow from the battery, through the resistor, to the Collector lead of the transistor, out the Emitter lead and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
-
-## Set Up More Balloons
-
-Popping one balloon is good, but popping three balloons, is so much better!
-
-1. Follow the point in Steps 1-3 for two more balloons. However, miss one the first point in Step 3, as you'll be using the same battery for all three resistors.  Also, use different pin number for these balloons:
-
-    - For balloon 2 use GPIO Pin number 3
-    - For balloon 3 use GPIO Pin Number 4
-
-    You can label your balloons with a pen so you know which one is which
-
-    ![](images/step4_point1.jpg)
-
-## Wire up an Input Button
-
-This will allow you to have control over when the balloons begin popping.
-
-1. The input button has two wires coming out of its base; insert the button into your breadboard (away from the transistors) so that these wires are in different rows.
-
-    ![](images/step5_point1.jpg)
-
-1. Take a jumper cable and insert one end of it into one of these rows the button has just been placed into and insert the other end of this jumper cable into the ground rail (yes, the same one as before…again!)
-
-    ![](images/step5_point2.jpg)
-
-1. Take a male-to-female jumper cable and insert one end into other row used by the button and attach the remaining free end of this cable onto GPIO pin number 14.
-
-    ![](images/step5_point3.jpg)
-
-There you have it; all your hardware is complete. It's now time for the coding!
-
-## Code your Balloon Pi-tay Popper
-
-1. In the desktop area of your Raspberry Pi, open up a LX Terminal, either from the dropdown menu, or by double clicking on the 'LXTerminal' icon.
-
-1. Once the LXTerminal is opened, type in `sudo idle3 &` and press `Enter`. This will open up a Python Shell with super user permissions (you need these to access the GPIO pins).
-
-1. In this Python Shell go to `File -> New Window` to open a new Python file.
-
-1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in `balloon.py`, and click `Save`. Now you can get coding!
-
-1. Start by importing the Raspberry Pi GPIO library. Write the following line in your Python file:
-
-    ```python
-    import RPi.GPIO as GPIO
-    ```
-
-1. On the next line, import the `time` module's `sleep` function by adding:
-
-    ```python
-    from time import sleep
-    ```
-
-1. Next leave a new line space after your `import` lines to separate them from your main code, and add a line to set the GPIO pin mode:
-
-    ```python
-    GPIO.setmode(GPIO.BCM)
-    ```
-
-    This states that you'll be using the BCM (Broadcom) numbering system to communicate with the GPIO pins, rather than the BOARD numbering system.
-
-1. Now you'll tell the Raspberry Pi which GPIO pins you'll use for each purpose. Leave another line break and add the following lines:
+1. Where you previously declared `button = 14`, add a line to declare `balloon = 2`:
 
     ```python
     button = 14
-    balloon_1 = 2
-    balloon_2 = 3
-    balloon_3 = 4
+    balloon = 2
     ```
 
-1. Leave another line break and set up the GPIO pin your push button is connected to (GPIO pin 14) as an input device:
+    This will designate GPIO pin 2 to what we'll use to pop the balloon.
+
+1. Next where we set up the button pin as an input device, we'll also set up the balloon pin as an output device:
 
     ```python
     GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
+    GPIO.setup(balloon, GPIO.OUT)
     ```
 
-    This tell the Raspberry Pi to treat GPIO pin 14 (the one the button is connected to) as a 'pulled up' input device.
-
-    'PUD_UP' stands for 'pull up or down' and the allocation to 'up'
-
-1. Leave another blank line and now you have to allocate the output pins. As there are 3 balloons, you'll need 3 outputs. To set these up, add them in the same way as the input pin:
+1. Now comes the code to pop the balloon. Before we used `wait_for_edge` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line and add:
 
     ```python
-    GPIO.setup(ballon_1, GPIO.OUT)
-    GPIO.setup(ballon_2, GPIO.OUT)
-    GPIO.setup(balloon_3, GPIO.OUT)
-    ```
-
-1. Because you set your button as a *Pull Up* input, when it's not pushed it's read as being active (the circuit is connected), but when it's pushed, the circuit is broken, so the input goes from high to low. In order to make the code read sensibly, we'll explain this by setting a variable `touched` to equal `GPIO.LOW`:
-
-    ```python
-    touched = GPIO.LOW
-    ```
-
-1. Also add a message to let you know when it's ready to receive a button press:
-
-    ```python
-    print("Ready...")
-    ```
-
-1. Now you can write the code that will switch on your transistors, which in turn will make the balloons pop. First of all we only need the balloons to pop once so to ensure this is the case, add a new line and type the following:
-
-    ```python
-    while True:
-        if GPIO.input(button) == touched:
-            print("Button Pushed")
-            sleep(1)
-            break
-    ```
-
-    This block of code is designed to test the effect of the button. `while True` means "keep going forever" and it checks to see if the button has been pressed, and prints `Button Pushed` when it has been, then `break` ends the loop.
-
-1. Add this line to the very bottom of your code (with no indentation):
-
-    ```python
-    GPIO.cleanup()
-    ```
-
-    This makes it forget all the GPIO setup information, so that it doesn't give warnings next time you run the file and set the pins up again.
-
-1. Save the code with `Ctrl + S` and run with `F5`. Press the button and you should see `Button Pushed` printed to the screen.
-
-1. Now for the outputs. You'll need to add all the following lines between `sleep(1)` and the `break` line:
-
-    ```python
-    GPIO.output(balloon_1, True)
-    print('Balloon 1')
+    GPIO.output(balloon, True)
     sleep(5)
-    GPIO.output(balloon_1, False)
-
-    GPIO.output(balloon_2, True)
-    print('Balloon 2')
-    sleep(5)
-    GPIO.output(balloon_2, False)
-
-    GPIO.output(balloon_3, True)
-    print('Balloon 3')
-    sleep(5)
-    GPIO.output(balloon_3, False)
+    GPIO.output(balloon, False)
     ```
 
-    This code will switch each of the output pins on, wait 5 seconds, turn then it off again and move on to the next one. This will result in each of the balloons exploding in sequence, five seconds apart.
+    This means "Turn the balloon pin on for 5 seconds, then turn it off".
 
-    Note: the five seconds is needed for the resistor to get hot enough in order to pop the balloons!
+1. In order to use the `sleep` function we need to import it from the `time` library so return to the very top of the code where you imported the `GPIO` library and add:
 
-1. Save your program again with `Ctrl + S`.
+    ```python
+    import RPi.GPIO as GPIO
+    from time import sleep
+    ```
 
-## Run your Balloon Pi-tay Popper
+1. Now save your code with `Ctrl + S` and check everything's wired up as it should be! Then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 
-1. You're almost ready to go, ensure that all your wires are in place and the resistors are still firmly taped onto the balloons.
+## Set Up More Balloons
 
-1. Then with your code still open press `F5`.
+Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, resistor, 3 male-to-male jumpers and 1 male-to-female jumper (and space on your breadboard).
 
-1. When you see `Ready` printed to the screen, it is ready to receive your input. So, when you're ready, press your button and watch the balloons pop ... pop ... POP!
+1. Set up the first balloon as before, replacing the old resistor (it's now burned out!) leaving the rest of the cabling as it was.
+
+1. Set up a second balloon with another resistor.
+
+1. Add your second transistor to the breadboard and wire it up in the same way as before, connecting the inside leg to the ground rail and its outside leg to GPIO pin 3 (leave the middle leg for now):
+
+    ![](images/second-transistor.png)
+
+1. Now connect the second transistor to the second balloon's resistor:
+
+    ![](images/second-transistor-resistor.png)
+
+    That's it for the wiring - but you can add more balloons if you like!
+e
+## Code more balloons
+
+Now we'll return to the code and make a few small adjustments to make it pop more balloons!
+
+1. Where we previously used `balloon = 2` to store the GPIO pin for the first balloon, we'll now use a list to store the pin numbers of all the balloons we're using:
+
+    ```python
+    balloons = [2, 3]
+    ```
+
+1. Now instead of just setting up one GPIO pin for the one balloon, make it do the `setup` function for every balloon in the list:
+
+    ```python
+    for balloon in balloons:
+        GPIO.setup(balloon, GPIO.OUT)
+    ```
+
+1. Then instead of just popping one balloon we'll make it pop them all in turn:
+
+    Instead of:
+
+    ```python
+    print("Popping...")
+    GPIO.output(balloon, True)
+    sleep(10)
+    GPIO.output(balloon, False)
+    ```
+
+    We'll use
+
+    ```python
+    for balloon in balloons:
+        print("Armed...")
+        GPIO.output(balloon, True)
+        sleep(10)
+        GPIO.output(balloon, False)
+    ```
 
 ## What next?
 
 Other stuff to Try:
 
-- Try changing the order the balloons pop in. To do this just change the order the GPIO pin numbers are used in.
+- Try changing the order the balloons pop in. To do this just change the order the GPIO pin numbers are used.
 
-- Convert your balloon popper into a rather addictive Interactive Calculator. The wiring up is exactly the same, but the code is slightly different, see this worksheet for how to make it.
+- Convert your balloon popper into an Interactive Calculator. The wiring up is exactly the same, but the code is slightly different.
