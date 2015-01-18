@@ -4,7 +4,7 @@ To pop balloons use may usually a pin. Here you'll be doing the same, but using 
 
 ## Wire up a button
 
-    First we'll wire up our push button to the Raspberry Pi.
+First we'll wire up our push button to the Raspberry Pi.
 
 1. Take a male-to-female jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
 
