@@ -19,6 +19,6 @@
 - name: Some 12R resistors
   img: resistor
   url: http://shop.pimoroni.com/products/resistor-grab-bag
-- name: 3 x P2N2222A Transistors
+- name: 3 x BC635 Transistors
   img: transistor
-  url: http://shop.pimoroni.com/products/bipolar-transistor
+  url: http://www.maplin.co.uk/p/bc635-low-power-npn-transistor-to92-case-n56ac
