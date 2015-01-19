@@ -1,10 +1,10 @@
 - name: 1 x Solderless breadboard
   img: breadboard
   url: http://shop.pimoroni.com/products/solderless-breadboard-400-point
-- name: 5 x Male-to-female jumper leads
+- name: 3 (or more) x Male-to-female jumper leads
   img: jumper-male-to-female
   url: http://shop.pimoroni.com/products/jumper-jerky
-- name: 4 x Male-to-male jumper leads
+- name: 4 (or more) x Male-to-male jumper leads
   img: jumper-male-to-male
   url: http://shop.pimoroni.com/products/jumper-jerky
 - name: 1 x Tactile Button
