@@ -84,8 +84,6 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
     ![](images/step1_point2_strippedwires.jpg)
 
-    ![](images/step1_point2_tapedwires.jpg)
-
     ![](images/step1_point2_wires.jpg)
 
 1. Take a 12R resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor and the other wire around the remaining wire coming from the resistor (it doesn't matter which wire is connected to which).
@@ -93,8 +91,6 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
     Make sure that there is a firm connection, you can even wrap electrical tape around the twisted wire to ensure it stays in place.
 
     ![](images/step1_point3_resistor.jpg)
-
-    ![](images/step1_point2_tapedresistor.jpg)
 
 1. Now, take some more electrical tape (it doesn't matter what colour) and tape the resistor firmly onto the most stretched part of the balloon (that's the balloon's side, see picture). It's important that this resistor is firmly touching the balloon, so stick it on carefully.
 
@@ -110,11 +106,7 @@ The voltage of a circuit is the amount of 'push' the current has; a higher volta
 
 A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow, but it's important that they're wired up correctly.
 
-Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right).
-
-[Note: this is true for P2N2222A transistor, but others transistors may have their leads in different positions]
-
-Like this:
+Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right):
 
 ![](images/transistor.png)
 
@@ -122,11 +114,15 @@ Like this:
 
     ![](images/place-transistor.png)
 
+    [ remove battery from this picture ]
+
     Be sure to place one leg in each hole in the same row.
 
 1. Now connect the end leg of the transistor to the ground rail and the middle leg to GPIO pin 2 on the Raspberry Pi:
 
     ![](images/connect-transistor.png)
+
+    [ remove battery from this picture ]
 
 ## Connect the balloon
 
@@ -138,7 +134,11 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get ho
 
 1. We want this circuit to go through the resistor attached to the balloon. Connect it to the breadboard in the space between the button and the transistor:
 
-    ![](images/step3_point2.png)
+    ![](images/place-resistor.png)
+
+1. Also connect one side of the resistor to the middle leg of the transistor, and the other side to the 9V power rail:
+
+    ![](images/connect-resistor.png)
 
     This circuit is now complete, the current will flow from the battery, through the resistor, to the collector leg of the transistor, out the Emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
 
@@ -191,11 +191,11 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
 1. Add your second transistor to the breadboard and wire it up in the same way as before, connecting the inside leg to the ground rail and its outside leg to GPIO pin 3 (leave the middle leg for now):
 
-    ![](images/second-transistor.png)
+    ![](images/connect-second-transistor.png)
 
 1. Now connect the second transistor to the second balloon's resistor:
 
-    ![](images/second-transistor-resistor.png)
+    ![](images/connect-second-transistor-resistor.png)
 
     That's it for the wiring - but you can add more balloons if you like!
 
