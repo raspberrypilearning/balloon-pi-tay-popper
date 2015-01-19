@@ -110,9 +110,9 @@ Hold your transistor up and you'll see that it's a semi-circle shape, with three
 
 The Base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector and the Emitter:
 
-** Please note: different transistors have legs in different orders. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your transistor or pop your balloon too early!**
+** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your Pi, the transistor or pop your balloon too early!**
 
-Hold the BC635 transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter.
+Hold the BC635 transistor with the flat side facing towards you and from left to right the leads are called the Base, Collector and the Emitter.
 
 
 ![](images/transistor.png)
