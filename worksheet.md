@@ -112,7 +112,7 @@ The Base controls the transistor and if it receives a signal (a small voltage) i
 
 ** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your Pi, the transistor or pop your balloon too early!**
 
-Hold the BC635 transistor with the flat side facing towards you and from left to right the leads are called the Base, Collector and the Emitter.
+Hold the BC635 transistor with the flat side facing towards you and from left to right the leads are called the Emitter, the Collector and Base.
 
 
 ![](images/transistor.png)
@@ -125,7 +125,7 @@ Hold the BC635 transistor with the flat side facing towards you and from left to
 
     Be sure to place one leg in each hole in the same row.
 
-1. Now connect the end leg of the transistor to the ground rail and the middle leg to GPIO pin 2 on the Raspberry Pi:
+1. Now connect the top leg of the transistor to the ground rail and the bottom leg to GPIO pin 2 on the Raspberry Pi:
 
     ![](images/connect-transistor.png)
 
