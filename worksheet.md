@@ -246,7 +246,7 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
 
 ## What next?
 
-Other stuff to Try:
+Other stuff to try:
 
 - Try changing the order the balloons pop in. To do this just change the order the GPIO pin numbers are used.
 
