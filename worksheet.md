@@ -106,7 +106,14 @@ The voltage of a circuit is the amount of 'push' the current has; a higher volta
 
 A Transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow, but it's important that they're wired up correctly.
 
-Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role. Hold the transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter. The middle lead (the Base) controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector (on the left) and the Emitter (on the right):
+Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom, each of these leads has a different name and role.
+
+The Base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on',  allowing current (from a higher voltage circuit) to flow between the Collector and the Emitter:
+
+** Please note: different transistors have legs in different orders. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your transistor or pop your balloon too early!**
+
+Hold the BC635 transistor with the flat side facing towards you and from left to right the leads are called the Collector, the Base and the Emitter.
+
 
 ![](images/transistor.png)
 
