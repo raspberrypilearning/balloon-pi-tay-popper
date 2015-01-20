@@ -2,7 +2,7 @@
 
 ![](cover.png)
 
-To pop balloons use may usually a pin. Here you’ll be doing the same, but using a GPIO ‘Pin’ on your Raspberry Pi, not the pin you might be thinking of!
+To pop balloons you might usually use a pin. Here you’ll be doing the same, but using a GPIO ‘Pin’ on your Raspberry Pi, not the pin you might be thinking of!
 
 ## Requirements
 
@@ -13,11 +13,11 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 - 1 x Solderless breadboard
 - 4 x Male-to-female jumper leads
 - 7 x Male-to-male jumper leads
-- 1 x Push-to-Make Switch
-- 1 x Battery Snap
-- 4m x 2 Core Speaker Cable (Bell Wire)
+- 1 x Push-to-make switch
+- 1 x Battery snap
+- 4m x 2 Core speaker cable (bell wire)
 - Some 12R resistors
-- 2 x BC635 Transistors
+- 2 x BC635 transistors
 
 ### Extras
 
@@ -25,8 +25,8 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 - Black electrical tape
 - String
 - Balloons
-- 9 volt Battery
-- Wire strippers or Scissors
+- 9 volt battery
+- Wire strippers or scissors
 
 ## Licence
 
