@@ -18,5 +18,5 @@ print("Popping...")
 for balloon in balloons:
     print("Armed...")
     GPIO.output(balloon, True)
-    sleep(10)
+    sleep(5)
     GPIO.output(balloon, False)
