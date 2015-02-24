@@ -228,7 +228,7 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
     ```python
     print("Popping...")
     GPIO.output(balloon, True)
-    sleep(10)
+    sleep(5)
     GPIO.output(balloon, False)
     ```
 
@@ -238,7 +238,7 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
     for balloon in balloons:
         print("Armed...")
         GPIO.output(balloon, True)
-        sleep(10)
+        sleep(5)
         GPIO.output(balloon, False)
     ```
 
