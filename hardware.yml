@@ -22,3 +22,6 @@
 - name: 1 (or more) x BC635 Transistors
   img: transistor
   url: http://www.maplin.co.uk/p/bc635-low-power-npn-transistor-to92-case-n56ac
+- name: 1 x 9V battery
+  img: battery-9v
+  url: http://www.amazon.co.uk/Duracell-MN1604-Plus-Power-Batteries--Pack/dp/B004W7GYGQ
