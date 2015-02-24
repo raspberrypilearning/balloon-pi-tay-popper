@@ -169,11 +169,13 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
     ```python
     GPIO.output(balloon, True)
-    sleep(5)
+    sleep(10)
     GPIO.output(balloon, False)
     ```
 
-    This means "Turn the balloon pin on for 5 seconds, then turn it off".
+    This means "Turn the balloon pin on for 10 seconds, then turn it off".
+    
+    Depending on the thickness of your balloon and how much it's blown up and stretched, this may take 5 seconds or more. If your balloons pop quickly you can reduce the length of time accordingly.
 
 1. In order to use the `sleep` function we need to import it from the `time` library. Return to the very top of the code where you imported the `GPIO` library and add:
 
