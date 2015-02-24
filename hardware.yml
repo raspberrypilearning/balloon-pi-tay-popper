@@ -13,12 +13,12 @@
 - name: 1 x Battery Snap
   img: battery-snap
   url: http://shop.pimoroni.com/products/pp3-battery-snap
-- name: 6m x 2 Core Speaker Cable (Bell Wire)
+- name: Bell Wire (2m strip per balloon)
   img: bell-wire
-  url: http://www.maplin.co.uk/p/speaker-cable-figure-of-8-6-x-3mm-white-priced-per-metre-xr60q
-- name: Some 12R resistors
+  url: http://www.maplin.co.uk/p/bell-cable-single-core-priced-per-metre-xs92a
+- name: Some 12R resistors (1 per balloon plus spares)
   img: resistor
   url: http://shop.pimoroni.com/products/resistor-grab-bag
-- name: 2 x BC635 Transistors
+- name: 1 (or more) x BC635 Transistors
   img: transistor
   url: http://www.maplin.co.uk/p/bc635-low-power-npn-transistor-to92-case-n56ac
