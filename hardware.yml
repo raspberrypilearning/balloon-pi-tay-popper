@@ -17,7 +17,7 @@
   img: bell-wire
   url: http://www.maplin.co.uk/p/bell-cable-single-core-priced-per-metre-xs92a
 - name: Some 12 ohm resistors (1 per balloon plus spares)
-  img: resistor
+  img: resistor-12r
   url: http://shop.pimoroni.com/products/resistor-grab-bag
 - name: 1 (or more) x BC635 Transistors
   img: transistor
