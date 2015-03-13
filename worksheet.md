@@ -82,9 +82,9 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores, so that the bare wire is visible. This can be done with wire strippers or (very carefully) with scissors (make sure that you only cut through the insulation and not the wires themselves). You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (not the part with the exposed wire), and black electrical tape around the other. This is just to label them for later.
 
-    ![](images/step1_point2_strippedwires.jpg)
-
     ![](images/step1_point2_wires.jpg)
+
+    ![](images/step1_point2_strippedwires.jpg)
 
 1. Take a 12R resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
 
