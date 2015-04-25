@@ -246,6 +246,6 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
 
 Other stuff to try:
 
-- Try changing the order the balloons pop in. To do this just change the order the GPIO pin numbers are used.
+- Try changing the order the balloons pop in. To do this just change the order in which the GPIO pin numbers are used.
 
-- Convert your balloon popper into an interactive calculator. The wiring up is exactly the same, but the code is slightly different.
+- Convert your balloon popper into an interactive calculator. The wiring-up is exactly the same, but the code is slightly different.
