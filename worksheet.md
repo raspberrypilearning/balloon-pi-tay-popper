@@ -92,7 +92,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
     ![](images/step1_point3_resistor.jpg)
 
-1. Now, take some more electrical tape (it doesn't matter what colour) and tape the resistor firmly onto the most stretched part of the balloon (that's the balloon's side- see picture). It's important that this resistor is firmly touching the balloon, so stick it on carefully.
+1. Now, take some more electrical tape (it doesn't matter what colour you use) and tape the resistor firmly onto the most stretched part of the balloon (that's the balloon's side: see picture). It's important that this resistor is firmly touching the balloon, so stick it on carefully.
 
     ![](images/step1_point4_positionofresistor.jpg)
 
@@ -102,11 +102,11 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 ## Connect the transistor
 
-The voltage of a circuit is the amount of 'push' the current has; a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistors hot enough to pop the balloons, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use what's called a transistor.
+The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistors hot enough to pop the balloons, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use what's called a transistor.
 
 A transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow. However, it's important that they're wired up correctly.
 
-Hold your transistor up and you'll see that it's a semi-circle shape, with three leads coming out the bottom. Each of these leads has a different name and role.
+Hold your transistor up and you'll see that it's a semi-circular shape, with three leads coming out the bottom. Each of these leads has a different name and role.
 
 The base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on', allowing current (from a higher voltage circuit) to flow between the collector and the emitter:
 
