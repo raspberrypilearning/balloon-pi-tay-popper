@@ -80,7 +80,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
-1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores, so that the bare wire is visible. This can be done with wire strippers or (very carefully) with scissors (make sure that you only cut through the insulation and not the wires themselves). You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (not the part with the exposed wire), and black electrical tape around the other. This is just to label them for later.
+1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores, so that the bare wire is visible. This can be done with wire strippers or, if you are very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
 
     ![](images/step1_point2_wires.jpg)
 
@@ -156,7 +156,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
     balloon = 2
     ```
 
-    This will designate GPIO pin 2 to what we'll use to pop the balloon.
+   This will designate GPIO pin 2 to what we'll use to pop the balloon.
 
 1. Next where we set up the button pin as an input device, we'll also set up the balloon pin as an output device:
 
