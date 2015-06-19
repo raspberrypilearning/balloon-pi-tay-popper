@@ -1,6 +1,6 @@
 # Balloon Pi-tay Popper
 
-To pop balloons you might usually use a pin. Here you'll be doing the same, but using a GPIO 'Pin' on your Raspberry Pi, not the pin you might be thinking of!
+To pop balloons you might usually use a pin. Here you'll be doing the same, but using a GPIO pin on your Raspberry Pi, not the pin you might be thinking of!
 
 ## Wire up a button
 
