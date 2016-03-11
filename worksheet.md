@@ -18,9 +18,7 @@ First we'll wire up our push button to the Raspberry Pi.
 
 Now we've connected a button, we'll activate it with some Python code.
 
-1. Open up LXTerminal from the desktop or application menu.
-
-1. Once the LXTerminal is opened, type in `sudo idle3 &` and press `Enter`. This will open up a Python Shell with super user permissions (you need these to access the GPIO pins).
+1. Open up IDLE by clicking on **Menu** > **Programming** > **Python 3** to open up a Python shell.
 
 1. In this Python Shell go to `File -> New Window` to open a new Python file.
 
