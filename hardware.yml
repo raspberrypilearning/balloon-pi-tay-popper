@@ -1,27 +1,18 @@
 - name: 1 x Solderless breadboard
   img: breadboard
-  url: http://shop.pimoroni.com/products/solderless-breadboard-400-point
 - name: 3 (or more) x Male-to-female jumper leads
   img: jumper-male-to-female
-  url: http://shop.pimoroni.com/products/jumper-jerky
 - name: 4 (or more) x Male-to-male jumper leads
   img: jumper-male-to-male
-  url: http://shop.pimoroni.com/products/jumper-jerky
 - name: 1 x Tactile Button
   img: tactile-push-button
-  url: http://shop.pimoroni.com/products/colourful-switch-caps
 - name: 1 x Battery Snap
   img: battery-snap
-  url: http://shop.pimoroni.com/products/pp3-battery-snap
 - name: Bell Wire (2m strip per balloon)
   img: bell-wire
-  url: http://www.maplin.co.uk/p/bell-cable-single-core-priced-per-metre-xs92a
 - name: Some 12 ohm resistors (1 per balloon plus spares)
   img: resistor-12r
-  url: http://shop.pimoroni.com/products/resistor-grab-bag
 - name: 1 (or more) x BC635 Transistors
   img: transistor
-  url: http://www.maplin.co.uk/p/bc635-low-power-npn-transistor-to92-case-n56ac
 - name: 1 x 9V battery
   img: battery-9v
-  url: http://www.amazon.co.uk/Duracell-MN1604-Plus-Power-Batteries--Pack/dp/B004W7GYGQ
