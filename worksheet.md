@@ -27,7 +27,7 @@ Now we've connected a button, we'll activate it with some Python code.
 1. Start by importing the gpiozero library. Write the following line in your Python file:
 
     ```python
-    from gpio import button
+    from gpiozero import Button
     ```
 
 1. Next leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
