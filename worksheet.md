@@ -18,53 +18,29 @@ First we'll wire up our push button to the Raspberry Pi.
 
 Now we've connected a button, we'll activate it with some Python code.
 
-1. Open up IDLE by clicking on **Menu** > **Programming** > **Python 3** to open up a Python shell.
+1. Open up IDLE by clicking on **Menu** > **Programming** > **Python 3 (IDLE)** to open up a Python shell.
 
-1. In this Python Shell go to `File -> New Window` to open a new Python file.
+1. In this Python Shell go to `File -> New File` to open a new Python file.
 
 1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in `balloon.py`, and click `Save`. Now you can get coding!
 
-1. Start by importing the Raspberry Pi GPIO library. Write the following line in your Python file:
+1. Start by importing the gpiozero library. Write the following line in your Python file:
 
     ```python
-    import RPi.GPIO as GPIO
+    from gpio import button
     ```
 
-1. Next leave a new line space to separate your imports from your main code, and add a line to set the GPIO pin mode:
+1. Next leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
 
     ```python
-    GPIO.setmode(GPIO.BCM)
+    button = Button(14)
     ```
-
-    This states that you'll be using the BCM (Broadcom) numbering system to communicate with the GPIO pins, rather than the BOARD numbering system.
-
-1. Also add a line to turn GPIO warnings off:
-
-    ```python
-    GPIO.setwarnings(False)
-    ```
-
-    This means that when you run the script multiple times, it won't tell you off for setting the same pins up again.
-
-1. Now you'll tell the Raspberry Pi which GPIO pin you'll use for the button. Leave another line break and add the following lines:
-
-    ```python
-    button = 14
-    ```
-
-1. Leave another line break and set up the GPIO pin your push button is connected to (GPIO pin 14) as an input device:
-
-    ```python
-    GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
-    ```
-
-    This tells the Raspberry Pi to treat GPIO pin 14 (the one the button will be connected to) as a 'pulled up' input device.
 
 1. Now add the following lines:
 
     ```python
     print("Ready...")
-    GPIO.wait_for_edge(button, GPIO.FALLING)
+    button.wait_for_press()
     print("Pop!")
     ```
 
@@ -147,40 +123,33 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot
 
 Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
+1. First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library.
+
+    ```python
+	from gpiozero import Button, OutputDevice
+	from time import sleep
+	```
+
 1. Where you previously declared `button = 14`, add a line to declare `balloon = 2`:
 
     ```python
-    button = 14
-    balloon = 2
+    button = Button(14)
+    balloon = OutputDevice(2)
     ```
 
    This will designate GPIO pin 2 to what we'll use to pop the balloon.
 
-1. Next where we set up the button pin as an input device, we'll also set up the balloon pin as an output device:
+1. Now comes the code to pop the balloon. Before we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line:
 
     ```python
-    GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
-    GPIO.setup(balloon, GPIO.OUT)
-    ```
-
-1. Now comes the code to pop the balloon. Before we used `wait_for_edge` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line:
-
-    ```python
-    GPIO.output(balloon, True)
+    balloon.on()
     sleep(10)
-    GPIO.output(balloon, False)
+    balloon.off()
     ```
 
     This means "Turn the balloon pin on for 10 seconds, then turn it off".
     
     Depending on the thickness of your balloon and how much it's blown up and stretched, this may take 5 seconds or more. If your balloons pop quickly you can reduce the length of time accordingly.
-
-1. In order to use the `sleep` function we need to import it from the `time` library. Return to the very top of the code where you imported the `GPIO` library and add:
-
-    ```python
-    import RPi.GPIO as GPIO
-    from time import sleep
-    ```
 
 1. Now save your code with `Ctrl + S` and check everything's wired up as it should be! Then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 
@@ -206,38 +175,21 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
 Now we'll return to the code and make a few small adjustments to make it pop more balloons!
 
-1. Where we previously used `balloon = 2` to store the GPIO pin for the first balloon, we'll now use a list to store the pin numbers of all the balloons we're using:
+1. Where we previously used `balloon = OutputDevice(2)` to store the GPIO pin for the first balloon, you'll now need to set up more balloons. You can do this using a list.
 
     ```python
-    balloons = [2, 3]
-    ```
-
-1. Now instead of just setting up one GPIO pin for the one balloon, make it do the `setup` function for every balloon in the list:
-
-    ```python
-    for balloon in balloons:
-        GPIO.setup(balloon, GPIO.OUT)
+	balloons = [OutputDevice(2), OutputDevice(3)]
     ```
 
 1. Then instead of just popping one balloon we'll make it pop them all in turn:
 
-    Instead of:
-
-    ```python
-    print("Popping...")
-    GPIO.output(balloon, True)
-    sleep(10)
-    GPIO.output(balloon, False)
-    ```
-
-    We'll use:
 
     ```python
     for balloon in balloons:
         print("Armed...")
-        GPIO.output(balloon, True)
+		balloon.on()
         sleep(10)
-        GPIO.output(balloon, False)
+		balloon.off()
     ```
 
 ## What next?
