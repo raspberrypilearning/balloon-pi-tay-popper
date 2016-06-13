@@ -76,7 +76,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 ## Connect the transistor
 
-The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistors hot enough to pop the balloons, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use what's called a transistor.
+The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistor hot enough to pop the balloon, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use a device called a transistor.
 
 A transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow. However, it's important that they're wired up correctly.
 
@@ -84,9 +84,9 @@ Hold your transistor up and you'll see that it's a semi-circular shape, with thr
 
 The base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on', allowing current (from a higher voltage circuit) to flow between the collector and the emitter:
 
-** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your Pi or the transistor, or pop your balloon too early!**
+** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check that your wiring is correct. Incorrect wiring could damage your Pi or the transistor, or make your balloon pop too early!**
 
-Hold the BC635 transistor with the flat side facing towards you; from left to right the leads are called the emitter, the collector and base.
+Hold the BC635 transistor with the flat side facing towards you: from left to right the leads are called the emitter, the collector, and base.
 
 ![](images/transistor.png)
 
