@@ -116,7 +116,7 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot
 
     ![](images/connect-resistor.png)
 
-    This circuit is now complete. The current will flow from the battery, through the resistor, to the collector leg of the transistor, out the emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
+    This circuit is now complete. The current will flow from the battery, through the resistor to the collector leg of the transistor, out the emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
 
 ## Add balloon to the code
 
