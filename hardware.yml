@@ -10,8 +10,9 @@
   img: battery-snap
 - name: Bell Wire (2m strip per balloon)
   img: bell-wire
-- name: Some 12 ohm resistors (1 per balloon plus spares)
+- name: Some 12Ω resistors (1 per balloon)
   img: resistor-12r
+- name: Some 330Ω resistors (1 per balloon)
 - name: 1 (or more) x BC635 Transistors
   img: transistor
 - name: 1 x 9V battery

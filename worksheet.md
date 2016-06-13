@@ -88,10 +88,9 @@ The base controls the transistor and if it receives a signal (a small voltage) i
 
 Hold the BC635 transistor with the flat side facing towards you; from left to right the leads are called the emitter, the collector and base.
 
-
 ![](images/transistor.png)
 
-1. Carefully place the transistor onto the breadboard with the flat side facing the ground rail like so:
+1. Carefully place the transistor onto the breadboard with the flat side facing the ground rail and a 330Ω resistor connected to the base like so:
 
     ![](images/place-transistor.png)
 
@@ -161,7 +160,7 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
 1. Set up a second balloon with another resistor.
 
-1. Add your second transistor to the breadboard and wire it up in the same way as before, connecting the inside leg to the ground rail and its outside leg to GPIO pin 3 (leave the middle leg for now):
+1. Add your second transistor to the breadboard and wire it up in the same way as before, connecting the inside leg to the ground rail and its outside leg to GPIO pin 3 through a 330Ω resistor (leave the middle leg for now):
 
     ![](images/connect-second-transistor.png)
 
