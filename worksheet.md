@@ -118,7 +118,7 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot
 
     This circuit is now complete. The current will flow from the battery, through the resistor to the collector leg of the transistor, out the emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
 
-## Add balloon to the code
+## Add the balloon to the code
 
 Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
@@ -136,7 +136,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
     balloon = OutputDevice(2)
     ```
 
-   This will designate GPIO pin 2 to what we'll use to pop the balloon.
+   This will designate GPIO pin 2 as what we'll use to pop the balloon.
 
 1. Now comes the code to pop the balloon. Before we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line:
 
@@ -148,13 +148,13 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
     This means "Turn the balloon pin on for 10 seconds, then turn it off".
     
-    Depending on the thickness of your balloon and how much it's blown up and stretched, this may take 5 seconds or more. If your balloons pop quickly you can reduce the length of time accordingly.
+    Depending on the thickness of your balloon and how much it has been blown up and stretched, this may take five seconds or more. If your balloon pops too quickly you can reduce the length of time accordingly.
 
 1. Now save your code with `Ctrl + S` and check everything's wired up as it should be! Then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 
 ## Set up more balloons
 
-Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, resistor, 3 male-to-male jumpers and 1 male-to-female jumper (and space on your breadboard).
+Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, resistor, three male-to-male jumpers and one male-to-female jumper (and space on your breadboard).
 
 1. Set up the first balloon as before, replacing the old resistor (it's now burned out!) leaving the rest of the cabling as it was.
 
@@ -168,7 +168,7 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
     ![](images/connect-second-transistor-resistor.png)
 
-    That's it for the wiring - but you can add more balloons if you like!
+    That's it for the wiring, but you can add more balloons if you like!
 
 ## Code more balloons
 
