@@ -20,7 +20,7 @@ Now we've connected a button, we'll activate it with some Python code.
 
 1. Open up IDLE by clicking on **Menu** > **Programming** > **Python 3 (IDLE)** to open up a Python shell.
 
-1. In this Python Shell go to `File -> New File` to open a new Python file.
+1. In this shell, go to `File -> New File` to open a new Python file.
 
 1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in `balloon.py`, and click `Save`. Now you can get coding!
 
@@ -30,7 +30,7 @@ Now we've connected a button, we'll activate it with some Python code.
     from gpiozero import Button
     ```
 
-1. Next leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
+1. Next, leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
 
     ```python
     button = Button(14)
@@ -44,17 +44,17 @@ Now we've connected a button, we'll activate it with some Python code.
     print("Pop!")
     ```
 
-    This will print "Ready", wait for the button to be pressed, then print "Pop!" which will be our balloon popping later!
+    This will print "Ready", wait for the button to be pressed, and will then print "Pop!" which will the point when our balloon pops later!
 
-1. Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button and you should see `Pop!` printed to the screen.
+1. Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button, and you should see `Pop!` printed to the screen.
 
 ## Set up the balloon popper
 
-We're going to be using a resistor to make the balloon pop. Resistors are electrical components that reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately overheating a resistor in order to pop a balloon. But before you can do that you need to wire up the resistor:
+We're going to be using a resistor to make the balloon pop. Resistors are electrical components which reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately overheating a resistor in order to pop a balloon. Before you can do that, though, you need to wire up the resistor:
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
-1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores, so that the bare wire is visible. This can be done with wire strippers or, if you are very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
+1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores so that the bare wire is visible. This can be done with wire strippers or, if you are very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
 
     ![](images/step1_point2_wires.jpg)
 
