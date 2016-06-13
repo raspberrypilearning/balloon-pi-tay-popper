@@ -1,4 +1,4 @@
-By creating a balloon popping circuit with your Raspberry Pi you will learn:
+By creating a balloon-popping circuit with your Raspberry Pi you will learn:
 
 - How to wire up a circuit
 - What transistors are used for
