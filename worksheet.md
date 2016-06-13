@@ -60,7 +60,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
     ![](images/step1_point2_strippedwires.jpg)
 
-1. Take a 12 ohm resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
+1. Take a 12Ω resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
 
     Make sure that there is a firm connection; you can even wrap electrical tape around the twisted wire to ensure it stays in place.
 
