@@ -4,7 +4,7 @@ To pop balloons you might usually use a pin. Here you'll be doing the same, but 
 
 ## Wire up a button
 
-First we'll wire up our push button to the Raspberry Pi.
+First we'll wire our push button up to the Raspberry Pi.
 
 1. Take a male-to-female jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
 
@@ -20,7 +20,7 @@ Now we've connected a button, we'll activate it with some Python code.
 
 1. Open up IDLE by clicking on **Menu** > **Programming** > **Python 3 (IDLE)** to open up a Python shell.
 
-1. In this Python Shell go to `File -> New File` to open a new Python file.
+1. In this shell, go to `File -> New File` to open a new Python file.
 
 1. It's good practice to save this file before you type anything important. To save go to `File -> Save As`, then type in `balloon.py`, and click `Save`. Now you can get coding!
 
@@ -30,7 +30,7 @@ Now we've connected a button, we'll activate it with some Python code.
     from gpiozero import Button
     ```
 
-1. Next leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
+1. Next, leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14.
 
     ```python
     button = Button(14)
@@ -44,23 +44,23 @@ Now we've connected a button, we'll activate it with some Python code.
     print("Pop!")
     ```
 
-    This will print "Ready", wait for the button to be pressed, then print "Pop!" which will be our balloon popping later!
+    This will print "Ready", wait for the button to be pressed, and will then print "Pop!" which will the point when our balloon pops later!
 
-1. Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button and you should see `Pop!` printed to the screen.
+1. Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button, and you should see `Pop!` printed to the screen.
 
 ## Set up the balloon popper
 
-We're going to be using a resistor to make the balloon pop. Resistors are electrical components that reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately overheating a resistor in order to pop a balloon. But before you can do that you need to wire up the resistor:
+We're going to be using a resistor to make the balloon pop. Resistors are electrical components which reduce the current flowing around a circuit, and in doing so they sometimes get hot. You're going to be taking advantage of this heat and deliberately overheating a resistor in order to pop a balloon. Before you can do that, though, you need to wire up the resistor:
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
-1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores, so that the bare wire is visible. This can be done with wire strippers or, if you are very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
+1. Take a 2 metre length of 2 core speaker cable and strip both ends of both cores so that the bare wire is visible. This can be done with wire strippers or, if you are very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
 
     ![](images/step1_point2_wires.jpg)
 
     ![](images/step1_point2_strippedwires.jpg)
 
-1. Take a 12 ohm resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
+1. Take a 12Ω resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
 
     Make sure that there is a firm connection; you can even wrap electrical tape around the twisted wire to ensure it stays in place.
 
@@ -76,7 +76,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 ## Connect the transistor
 
-The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistors hot enough to pop the balloons, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use what's called a transistor.
+The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistor hot enough to pop the balloon, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use a device called a transistor.
 
 A transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low voltage circuit, and once 'on' they allow a higher voltage circuit to flow. However, it's important that they're wired up correctly.
 
@@ -84,9 +84,9 @@ Hold your transistor up and you'll see that it's a semi-circular shape, with thr
 
 The base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on', allowing current (from a higher voltage circuit) to flow between the collector and the emitter:
 
-** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check they are correct. Wiring up incorrectly could mean you'll damage your Pi or the transistor, or pop your balloon too early!**
+** Please note: some models of transistors have the legs in a different order. If you are not using BC635 transistors then you must look at the datasheet to check that your wiring is correct. Incorrect wiring could damage your Pi or the transistor, or make your balloon pop too early!**
 
-Hold the BC635 transistor with the flat side facing towards you; from left to right the leads are called the emitter, the collector and base.
+Hold the BC635 transistor with the flat side facing towards you: from left to right the leads are called the emitter, the collector, and base.
 
 ![](images/transistor.png)
 
@@ -116,9 +116,9 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot
 
     ![](images/connect-resistor.png)
 
-    This circuit is now complete. The current will flow from the battery, through the resistor, to the collector leg of the transistor, out the emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
+    This circuit is now complete. The current will flow from the battery, through the resistor to the collector leg of the transistor, out the emitter leg and then back to ground. As it flows through the resistor it will heat it up so much that the balloon will pop.
 
-## Add balloon to the code
+## Add the balloon to the code
 
 Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
@@ -136,7 +136,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
     balloon = OutputDevice(2)
     ```
 
-   This will designate GPIO pin 2 to what we'll use to pop the balloon.
+   This will designate GPIO pin 2 as what we'll use to pop the balloon.
 
 1. Now comes the code to pop the balloon. Before we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line:
 
@@ -148,13 +148,13 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
     This means "Turn the balloon pin on for 10 seconds, then turn it off".
     
-    Depending on the thickness of your balloon and how much it's blown up and stretched, this may take 5 seconds or more. If your balloons pop quickly you can reduce the length of time accordingly.
+    Depending on the thickness of your balloon and how much it has been blown up and stretched, this may take five seconds or more. If your balloon pops too quickly you can reduce the length of time accordingly.
 
 1. Now save your code with `Ctrl + S` and check everything's wired up as it should be! Then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 
 ## Set up more balloons
 
-Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, resistor, 3 male-to-male jumpers and 1 male-to-female jumper (and space on your breadboard).
+Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, resistor, three male-to-male jumpers and one male-to-female jumper (and space on your breadboard).
 
 1. Set up the first balloon as before, replacing the old resistor (it's now burned out!) leaving the rest of the cabling as it was.
 
@@ -168,7 +168,7 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
     ![](images/connect-second-transistor-resistor.png)
 
-    That's it for the wiring - but you can add more balloons if you like!
+    That's it for the wiring, but you can add more balloons if you like!
 
 ## Code more balloons
 
