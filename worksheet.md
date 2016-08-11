@@ -197,4 +197,4 @@ Other stuff to try:
 
 - Try changing the order the balloons pop in. To do this just change the order in which the GPIO pin numbers are used.
 
-- Convert your balloon popper into an interactive calculator. The wiring-up is exactly the same, but the code is slightly different.
+- Why not trying to have the balloons pop when a motion sensor is triggered. You can find out how to use a motion sensor in [this resource](https://www.raspberrypi.org/learning/parent-detector/)
