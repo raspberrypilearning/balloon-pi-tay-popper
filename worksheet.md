@@ -182,7 +182,6 @@ Now we'll return to the code and make a few small adjustments to make it pop mor
 
 1. Then, instead of just popping one balloon, we'll make it pop them all in turn:
 
-
     ```python
     for balloon in balloons:
         print("Armed...")
@@ -197,5 +196,4 @@ Other stuff to try:
 
 - Try changing the balloons' popping order. To do this, just change the order in which the GPIO pin numbers are used.
 
-- Why not trying to have the balloons pop when a motion sensor is triggered. You can find out how to use a motion sensor in [this resource](https://www.raspberrypi.org/learning/parent-detector/)
-
+- Why not trying to have the balloons pop when a motion sensor is triggered. You can find out how to use a motion sensor in [parent detector](https://www.raspberrypi.org/learning/parent-detector/)
