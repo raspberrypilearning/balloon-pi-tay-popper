@@ -8,8 +8,8 @@
   img: tactile-push-button
 - name: 1 x Battery snap
   img: battery-snap
-- name: Bell wire (2m strip per balloon)
-  img: bell-wire
+- name: 2-core speaker cable (2m strip per balloon)
+  img: speaker-cable
 - name: Some 12Ω resistors (1 per balloon)
   img: resistor-12r
 - name: Some 330Ω resistors (1 per balloon)
