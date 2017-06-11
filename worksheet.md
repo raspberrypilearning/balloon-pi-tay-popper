@@ -122,7 +122,7 @@ Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot
 
 Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
-1. First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library:
+1. First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library.  Add `OutputDevice` and import the `sleep` method at the beginning of your code:
 
     ```python
 	from gpiozero import Button, OutputDevice
@@ -138,7 +138,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
    This will designate GPIO pin 2 as what we'll use to pop the balloon.
 
-1. Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a new line before the `Pop!` line:
+1. Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a the following lines before the `Pop!` line:
 
     ```python
     balloon.on()
