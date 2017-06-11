@@ -9,10 +9,11 @@
 - name: 1 x Battery snap
   img: battery-snap
 - name: 2-core speaker cable (2m strip per balloon)
-  img: speaker-cable
+  img: bell-wire
 - name: Some 12Ω resistors (1 per balloon)
   img: resistor-12r
 - name: Some 330Ω resistors (1 per balloon)
+  img: resistor-330r
 - name: 1 (or more) x BC635 transistors
   img: transistor
 - name: 1 x 9V battery
