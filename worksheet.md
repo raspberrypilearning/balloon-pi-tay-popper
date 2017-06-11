@@ -148,7 +148,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
     This means "Turn the balloon pin on for 10 seconds, then turn it off".
     
-    Depending on the thickness of your balloon and how much it has been blown up and stretched, this may take five seconds or more. If your balloon pops too quickly, you can reduce the length of time accordingly.
+    Depending on the thickness of your balloon and how much it has been blown up and stretched, this may take five seconds or more. If your balloon does not pop, you can increase the length of the `sleep` time accordingly.
 
 1. Now save your code with `Ctrl + S`, check everything's wired up as it should be, then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 
