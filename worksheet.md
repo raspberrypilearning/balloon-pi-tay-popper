@@ -96,7 +96,7 @@ Hold the BC635 transistor with the flat side facing towards you: from left to ri
 
     Be sure to place one leg in each hole in the same row.
 
-1. Now connect the top leg of the transistor to the ground rail, and the bottom leg to GPIO pin 2 on the Raspberry Pi:
+1. Now connect the top leg of the transistor to the ground rail, and the bottom leg of the 330Ω resistor to GPIO 2 on the Raspberry Pi:
 
     ![](images/connect-transistor.png)
 
