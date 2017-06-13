@@ -138,7 +138,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
    This will designate GPIO pin 2 as what we'll use to pop the balloon.
 
-1. Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add a the following lines before the `Pop!` line:
+1. Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add the following lines before the `Pop!` line:
 
     ```python
     balloon.on()
