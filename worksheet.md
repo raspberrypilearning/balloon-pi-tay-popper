@@ -54,13 +54,13 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
-1. Take 2 metres of 2-core speaker cable, and strip both ends of both cores so that the bare wire is visible. This can be done with wire strippers or, if you're very careful, with scissors: make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little simply by pulling them apart. At one end of the cable, wrap red electrical tape around one wire (around the insulated section, not the section with the exposed core), and black electrical tape around the other. This is to label them for later.
+1. Take 2 metres of 2-core speaker cable and strip both ends of both cores so that the bare wire is visible: strip 1 cm of insulation off one end (the end we'll connect to the breadboard) and about 3 cm off the other end (the end we'll connect to the 12Ω resistor). This can be done with wire strippers or, if you're very careful, with scissors - make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little by simply pulling them apart.
 
     ![](images/step1_point2_wires.jpg)
 
     ![](images/step1_point2_strippedwires.jpg)
 
-1. Take a 12Ω resistor and the ends of the speaker cable without electrical tape around them. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the remaining wire coming from the resistor; it doesn't matter which wire is connected to which.
+1. Take a 12Ω resistor and the 3 cm stripped end of the speaker cable. Twist one wire of the cable around one wire coming from the resistor, and the other wire around the other wire coming from the resistor; it doesn't matter which wire is connected to which, just make sure the two ends of the wire do not touch each other.
 
     Make sure that there's a firm connection; you can even wrap electrical tape around the twisted wire to ensure it stays in place.
 
