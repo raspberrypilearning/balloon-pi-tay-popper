@@ -10,7 +10,7 @@ First, we'll wire our push button up to the Raspberry Pi.
 
     ![](images/connect-ground-rail.png)
 
-1. Place the push button on the breadboard and connect one of its legs to the ground rail, and one to GPIO pin 14:
+1. Place the push button on the breadboard and connect one of its legs to the ground rail, and one to GPIO 14:
 
     ![](images/connect-button.png)
 
@@ -136,7 +136,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
     balloon = OutputDevice(2)
     ```
 
-   This will designate GPIO pin 2 as what we'll use to pop the balloon.
+   This will designate GPIO 2 as what we'll use to pop the balloon.
 
 1. Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add the following lines before the `Pop!` line:
 
@@ -160,7 +160,7 @@ Popping one balloon is good, but popping more balloons is so much better! For ea
 
 1. Set up a second balloon with another resistor.
 
-1. Add your second transistor to the breadboard and wire it up in the same way as before. Connect the inside leg to the ground rail and its outside leg to GPIO pin 3 through a 330Ω resistor (leave the middle leg for now):
+1. Add your second transistor to the breadboard and wire it up in the same way as before. Connect the inside leg to the ground rail and its outside leg to GPIO 3 through a 330Ω resistor (leave the middle leg for now):
 
     ![](images/connect-second-transistor.png)
 
