@@ -1,0 +1,28 @@
+---
+title: Balloon Pi-tay Popper
+hero_image: images/banner.png
+description: Pop balloons using a different type of pin - a GPIO pin!
+original_url: https://raspberrypi.org/learning/balloon-pi-tay-popper
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Balloon Pi-tay popper
+- title: Wire up a button
+- title: Test the button with code
+- title: Set up the balloon popper
+- title: Connect the transistor
+- title: Connect the balloon
+- title: Add the balloon to the code
+- title: Set up more balloons
+- title: Code more balloons
+- title: What next?
+
