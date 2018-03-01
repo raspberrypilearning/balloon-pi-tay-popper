@@ -8,7 +8,7 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+curriculum: creator, design-0, programming-1, phys-comp-2, manufacture-1, community-0
 interests: 'jokes/pranks'
 technologies: physical computing, python
 site_areas: ''
@@ -25,4 +25,3 @@ steps:
 - title: Set up more balloons
 - title: Code more balloons
 - title: What next?
-
