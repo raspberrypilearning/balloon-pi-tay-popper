@@ -16,9 +16,10 @@ hardware: electronic-components
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
+  completion: engaged
 - title: Balloon Pi-tay popper
 - title: Wire up a button
 - title: Test the button with code
@@ -27,5 +28,6 @@ steps:
 - title: Connect the balloon
 - title: Add the balloon to the code
 - title: Set up more balloons
+  completion: internal
 - title: Code more balloons
 - title: What next?
