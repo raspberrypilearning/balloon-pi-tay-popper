@@ -1,18 +1,32 @@
-## Connect the balloon
+## Set up more balloons
 
-Now we're going to use a 9V battery. We need 9 volts for the resistor to get hot enough to pop the balloon!
+Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, another resistor, three male-to-male jumpers, one male-to-female jumper, and space on your breadboard.
 
-- Place the battery in the battery snap. Connect its black lead into the ground rail and the red lead into the power rail on your breadboard - that's the red one adjacent to the ground rail.
+--- task ---
 
-    ![](images/connect-battery-snap.png)
+Set up the first balloon as before, replacing the old resistor (it's now burned out!). Leave the rest of the wiring as it is.
 
-- We want this circuit to go through the resistor attached to the balloon. Connect it to the breadboard in the space between the button and the transistor:
+--- /task ---
 
-    ![](images/place-resistor.png)
+--- task ---
 
-- Now connect one side of the resistor to the middle leg of the transistor, and the other side to the 9V power rail:
+Set up a second balloon with another resistor.
 
-    ![](images/connect-resistor.png)
+Add your second transistor to the breadboard and wire it up in the same way as before. Connect the inside leg to the ground rail and its outside leg to GPIO 3 through a 330Ω resistor (leave the middle leg for now):
 
-    This circuit is now complete. The current will flow from the battery, through the resistor to the collector leg of the transistor, out the emitter leg and then back to ground. As the current flows through the resistor, it will heat it up so much that the balloon will pop.
+![](images/connect-second-transistor.png)
+
+--- /task ---
+
+--- task ---
+
+Now connect the second transistor to the second balloon's resistor:
+
+![](images/connect-second-transistor-resistor.png)
+
+That's it for the wiring, but you can add more balloons if you like!
+
+--- /task ---
+
+
 

@@ -1,14 +1,22 @@
-## What you will need
+## Wire up a button
 
-### Hardware
+First, we'll wire our push button up to the Raspberry Pi.
 
-* 1 x Solderless breadboard
-* 3 (or more) x Male-to-female jumper leads
-* 4 (or more) x Male-to-male jumper leads
-* 1 x Tactile button
-* 1 x Battery snap
-* 2-core speaker cable (2m strip per balloon)
-* Some 12Ω resistors (1 per balloon)
-* Some 330Ω resistors (1 per balloon)
-* 1 (or more) x BC635 transistors
-* 1 x 9V battery
+--- task ---
+
+Take a pin-to-socket jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
+
+![](images/connect-ground-rail.png)
+
+--- /task ---
+
+--- task ---
+
+Place the push button on the breadboard and connect one of its legs to the ground rail, and one to GPIO 14:
+
+![](images/connect-button.png)
+
+--- /task ---
+
+
+

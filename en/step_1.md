@@ -1,17 +1,46 @@
 ## What you will make
-To pop balloons you might usually use a pin. Here you'll be doing the same, but using a GPIO pin on your Raspberry Pi, not the pin you might be thinking of!
 
-## What you will learn
-By creating a balloon-popping circuit with your Raspberry Pi you will learn:
+<html>
+<video width="540" height="720" controls>
+<source src="images/balloon popper.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</html>
 
+--- collapse ---
+
+---
+
+title: What you will need
+
+---
+* 1 x Solderless breadboard
+* 3 (or more) x Male-to-female jumper leads
+* 4 (or more) x Male-to-male jumper leads
+* 1 x Tactile button
+* 1 x Battery snap
+* 2-core speaker cable (2m strip per balloon)
+* Some 12Ω resistors (1 per balloon)
+* Some 330Ω resistors (1 per balloon)
+* 1 (or more) x BC635 transistors
+* 1 x 9V battery
+
+
+--- /collapse ---
+
+--- collapse ---
+
+---
+
+title: What you will learn
+
+---
 - How to wire up a circuit
 - What transistors are used for
 - How to use a push button to control current
 - How to use Python code to control the Pi's GPIO pins, to heat up a resistor enough to pop a balloon!
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
-- [Use basic materials and tools to create project prototypes](https://www.raspberrypi.org/curriculum/manufacture/creator)
+--- /collapse ---
+
 

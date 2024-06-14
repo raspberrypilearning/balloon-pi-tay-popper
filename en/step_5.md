@@ -1,34 +1,50 @@
-## Test the button with code
+## Connect the transistor
 
-Now we've connected a button, we'll activate it with some Python code.
+--- collapse ---
 
-- Open IDLE by clicking on **Menu** > **Programming** > **Python 3 (IDLE)** to open a Python shell.
+---
 
-- In this shell, go to `File -> New File` to open a new Python file.
+title: Transistors
 
-- It's good practice to save this file before you type anything important. To save, go to `File -> Save As`, then type in `balloon.py` and click `Save`. Now you can get coding!
+---
 
-- Start by importing the `gpiozero` library. Write the following line in your Python file:
+The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistor hot enough to pop the balloon, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use a device called a transistor.
 
-    ```python
-    from gpiozero import Button
-    ```
+A transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low-voltage circuit, and once 'on' they allow a higher-voltage circuit to flow. However, it's important that they're wired up correctly.
 
-- Next, leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14:
+Hold your transistor up and you'll see that it's a semi-circular shape, with three leads coming out the bottom. Each of these leads has a different name and role.
 
-    ```python
-    button = Button(14)
-    ```
+The base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on', allowing current from a higher-voltage circuit to flow between the collector and the emitter.
 
-- Now add the following lines:
+** Please note: some models of transistors have the legs in a different order. If you're not using BC635 transistors then you must look at the datasheet to check that your wiring is correct. Incorrect wiring could damage your Pi or the transistor, or make your balloon pop too early!**
 
-    ```python
-    print("Ready...")
-    button.wait_for_press()
-    print("Pop!")
-    ```
+--- /collapse ---
 
-    This will print "Ready", wait for the button to be pressed, and then print "Pop!" which will be the point when our balloon pops later!
+--- task ---
 
-- Save the code with `Ctrl + S` and run with `F5`. When you see `Ready...` on the screen, press the button, and you should see `Pop!` printed to the screen.
+Hold the BC635 transistor with the flat side facing towards you: from left to right the leads are called the emitter, the collector, and the base.
+
+![](images/transistor.png)
+
+--- /task ---
+
+--- task ---
+
+Carefully place the transistor onto the breadboard, with the flat side facing the ground rail and a 330Ω resistor connected to the base, like so:
+
+![](images/place-transistor.png)
+
+Be sure to place one leg in each hole in the same row.
+
+--- /task ---
+
+--- task ---
+
+Now connect the top leg of the transistor to the ground rail, and the bottom leg of the 330Ω resistor to GPIO 2 on the Raspberry Pi:
+
+![](images/connect-transistor.png)
+
+
+--- /task ---
+
 
