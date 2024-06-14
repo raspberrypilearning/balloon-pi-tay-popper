@@ -1,7 +1,7 @@
 ## What you will make
 
 <html>
-<video width="640" height="360" controls>
+<video width="1080" height="1920" controls>
 <source src="images/balloon popper.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
