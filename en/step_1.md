@@ -7,7 +7,7 @@ Your browser does not support the video tag.
 </video>
 </html>
 
----- collapse ---
+--- collapse ---
 
 ---
 
@@ -28,7 +28,7 @@ title: What you will need
 
 --- /collapse ---
 
----- collapse ---
+--- collapse ---
 
 ---
 

@@ -1,6 +1,6 @@
 ## Connect the transistor
 
----- collapse ---
+--- collapse ---
 
 ---
 
@@ -20,7 +20,7 @@ The base controls the transistor and if it receives a signal (a small voltage) i
 
 --- /collapse ---
 
----- task ---
+--- task ---
 
 Hold the BC635 transistor with the flat side facing towards you: from left to right the leads are called the emitter, the collector, and the base.
 
@@ -28,7 +28,7 @@ Hold the BC635 transistor with the flat side facing towards you: from left to ri
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Carefully place the transistor onto the breadboard, with the flat side facing the ground rail and a 330Ω resistor connected to the base, like so:
 
@@ -38,7 +38,7 @@ Be sure to place one leg in each hole in the same row.
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Now connect the top leg of the transistor to the ground rail, and the bottom leg of the 330Ω resistor to GPIO 2 on the Raspberry Pi:
 

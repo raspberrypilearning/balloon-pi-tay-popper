@@ -2,7 +2,7 @@
 
 Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
----- task ---
+--- task ---
 
 First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library.  Add `OutputDevice` and import the `sleep` method at the beginning of your code:
 
@@ -13,7 +13,7 @@ First, you're going to need an `OutputDevice` to trigger the transistor, and you
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Where you previously declared `button = 14`, add a line to declare `balloon = 2`:
 
@@ -26,7 +26,7 @@ This will designate GPIO 2 as what we'll use to pop the balloon.
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add the following lines before the `Pop!` line:
 

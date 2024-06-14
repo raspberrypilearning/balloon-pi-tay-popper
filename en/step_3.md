@@ -2,19 +2,19 @@
 
 Now we've connected a button, we'll activate it with some Python code.
 
----- task ---
+--- task ---
 
 Open Thonny by clicking on **Menu** > **Programming** > **Thonny**
 
 --- /task ---
 
----- task ---
+--- task ---
 
 To save, go to `File -> Save As`, then type in `balloon.py` and click `Save`. Now you can get coding!
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Start by importing the `gpiozero` library. Write the following line in your Python file:
 
@@ -24,10 +24,10 @@ from gpiozero import Button
 
 --- /task ---
 
----- task ---
+--- task ---
 
 
-- Next, leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14:
+Next, leave a new line space to separate your imports from your main code, and add a line to set up a button on pin 14:
 
 ```python
 button = Button(14)
@@ -35,7 +35,7 @@ button = Button(14)
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Now add the following lines:
 

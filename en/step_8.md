@@ -7,7 +7,7 @@ Set up the first balloon as before, replacing the old resistor (it's now burned 
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Set up a second balloon with another resistor.
 
@@ -17,7 +17,7 @@ Add your second transistor to the breadboard and wire it up in the same way as b
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Now connect the second transistor to the second balloon's resistor:
 

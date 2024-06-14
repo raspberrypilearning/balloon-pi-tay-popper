@@ -20,7 +20,7 @@ Inflate a balloon so it's nice and full, then tie a knot in it.
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Take two wires, each about 2 metres in length and strip both ends, so the bare wires is visible.
 
@@ -30,7 +30,7 @@ Take two wires, each about 2 metres in length and strip both ends, so the bare w
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Take a 12Ω resistor and the stripped end of the wire. Twist one wire of the cable around one leg coming from the resistor, and the other wire around the other leg coming from the resistor; it doesn't matter which wire is connected to which, just make sure the two ends of the wire do not touch each other.
 
@@ -40,7 +40,7 @@ Make sure that there's a firm connection; you can even wrap electrical tape arou
 
 --- /task ---
 
----- task ---
+--- task ---
 
 Take some more electrical tape (it doesn't matter what colour you use) and tape the resistor firmly onto the most stretched part of the balloon; that's the balloon's side, as in the picture below. It's important that this resistor is firmly touching the balloon, so stick it on carefully.
 
