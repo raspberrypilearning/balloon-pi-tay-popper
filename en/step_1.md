@@ -1,9 +1,11 @@
 ## What you will make
 
-    <video width="640" height="360" controls>
-        <source src="images/balloon popper.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<html>
+<video width="640" height="360" controls>
+<source src="images/balloon popper.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</html>
 
 ## What you will learn
 By creating a balloon-popping circuit with your Raspberry Pi you will learn:
