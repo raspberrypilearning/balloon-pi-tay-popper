@@ -1,5 +1,9 @@
 ## What you will make
-To pop balloons you might usually use a pin. Here you'll be doing the same, but using a GPIO pin on your Raspberry Pi, not the pin you might be thinking of!
+
+    <video width="640" height="360" controls>
+        <source src="images/balloon popper.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 ## What you will learn
 By creating a balloon-popping circuit with your Raspberry Pi you will learn:
