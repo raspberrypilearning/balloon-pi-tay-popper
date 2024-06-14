@@ -2,7 +2,7 @@
 
 We're going to be using a resistor to make the balloon pop.
 
----- collapse ---
+--- collapse ---
 
 ---
 
@@ -14,7 +14,7 @@ Resistors are electrical components which reduce the current flowing around a ci
 
 --- /collapse ---
 
----- task ---
+--- task ---
 
 Inflate a balloon so it's nice and full, then tie a knot in it.
 
