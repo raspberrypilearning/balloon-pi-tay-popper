@@ -6,10 +6,10 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
 First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library.  Add `OutputDevice` and import the `sleep` method at the beginning of your code:
 
-    ```python
-	from gpiozero import Button, OutputDevice
-	from time import sleep
-	```
+```python
+from gpiozero import Button, OutputDevice
+from time import sleep
+```
 
 --- /task ---
 
