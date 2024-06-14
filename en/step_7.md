@@ -1,26 +1,34 @@
-## Connect the transistor
+## Add the balloon to the code
 
-The voltage of a circuit is the amount of 'push' the current has: a higher voltage provides a bigger push, which usually results in more current flowing in the circuit. Here, in order to make the resistor hot enough to pop the balloon, we need to run a higher current through them than the voltage on the Raspberry Pi can provide, and to do this we'll use a device called a transistor.
+Now we've completed our circuit we'll need to change our code to trigger the transistor, allowing current to flow through the resistor, which will pop the balloon.
 
-A transistor allows you to 'amplify' a circuit, as they can be switched 'on' by a low-voltage circuit, and once 'on' they allow a higher-voltage circuit to flow. However, it's important that they're wired up correctly.
+- First, you're going to need an `OutputDevice` to trigger the transistor, and you'll need the `sleep` method from the `time` library.  Add `OutputDevice` and import the `sleep` method at the beginning of your code:
 
-Hold your transistor up and you'll see that it's a semi-circular shape, with three leads coming out the bottom. Each of these leads has a different name and role.
+    ```python
+	from gpiozero import Button, OutputDevice
+	from time import sleep
+	```
 
-The base controls the transistor and if it receives a signal (a small voltage) it turns the transistor 'on', allowing current from a higher-voltage circuit to flow between the collector and the emitter.
+- Where you previously declared `button = 14`, add a line to declare `balloon = 2`:
 
-** Please note: some models of transistors have the legs in a different order. If you're not using BC635 transistors then you must look at the datasheet to check that your wiring is correct. Incorrect wiring could damage your Pi or the transistor, or make your balloon pop too early!**
+    ```python
+    button = Button(14)
+    balloon = OutputDevice(2)
+    ```
 
-Hold the BC635 transistor with the flat side facing towards you: from left to right the leads are called the emitter, the collector, and the base.
+   This will designate GPIO 2 as what we'll use to pop the balloon.
 
-![](images/transistor.png)
+- Now comes the code to pop the balloon. Earlier, we used `button.wait_for_press()` to wait for a button press, then we just printed `Pop!`. Add the following lines before the `Pop!` line:
 
-- Carefully place the transistor onto the breadboard, with the flat side facing the ground rail and a 330Ω resistor connected to the base, like so:
+    ```python
+    balloon.on()
+    sleep(10)
+    balloon.off()
+    ```
 
-    ![](images/place-transistor.png)
+    This means "Turn the balloon pin on for 10 seconds, then turn it off".
+    
+    Depending on the thickness of your balloon and how much it has been blown up and stretched, this may take five seconds or more. If your balloon does not pop, you can increase the length of the `sleep` time accordingly.
 
-    Be sure to place one leg in each hole in the same row.
-
-- Now connect the top leg of the transistor to the ground rail, and the bottom leg of the 330Ω resistor to GPIO 2 on the Raspberry Pi:
-
-    ![](images/connect-transistor.png)
+- Now save your code with `Ctrl + S`, check everything's wired up as it should be, then run your code with `F5`. When you see `Ready...`, press the button and your balloon should burst!
 

@@ -18,7 +18,6 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-- title: What you will need
 - title: Balloon Pi-tay popper
 - title: Wire up a button
 - title: Test the button with code
