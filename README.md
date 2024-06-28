@@ -11,8 +11,8 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 ### Hardware
 
 - 1 x Solderless breadboard
-- 4 x Male-to-female jumper leads
-- 7 x Male-to-male jumper leads
+- 4 x Pin-to-socket jumper leads
+- 7 x Pin-to-pin jumper leads
 - 1 x Push-to-make switch
 - 1 x Battery snap
 - 2 x 4m core speaker cable (bell wire)
