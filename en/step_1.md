@@ -15,16 +15,16 @@ title: What you will need
 
 ---
 * 1 x Solderless breadboard
-* 3 (or more) x pin-to-socket jumper leads
-* 4 (or more) x pin-to-pin jumper leads
-* 1 x Tactile button
-* 2-core speaker cable (2m strip per balloon)
-* Some 12Ω resistors (1 per balloon)
-* Some 330Ω resistors (1 per balloon)
-* 1 (or more) x BC635 transistors
 * 1 x 9V battery
 * 1 x Battery snap
-
+* 1 x Tactile button
+  
+For each balloon:
+* 1 x pin-to-pin jumper lead
+* 1 x 2m strip of 2-core speaker cable
+* 1 x 12Ω resistor
+* 1 x 330Ω resistor
+* 1 x BC635 transistor
 
 --- /collapse ---
 

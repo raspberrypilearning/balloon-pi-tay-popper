@@ -54,7 +54,7 @@ We're going to be using a resistor to make the balloon pop. Resistors are electr
 
 1. Inflate a balloon so it's nice and full, then tie a knot in it.
 
-1. Take 2 metres of 2-core speaker cable and strip both ends of both cores so that the bare wire is visible: strip 1 cm of insulation off one end (the end we'll connect to the breadboard) and about 3 cm off the other end (the end we'll connect to the 12Ω resistor). This can be done with wire strippers or, if you're very careful, with scissors - make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little by simply pulling them apart.
+1. Take 2 meters of 2-core speaker cable and strip both ends of both cores so that the bare wire is visible: strip 1 cm of insulation off one end (the end we'll connect to the breadboard) and about 3 cm off the other end (the end we'll connect to the 12Ω resistor). This can be done with wire strippers or, if you're very careful, with scissors - make sure that you only cut through the insulation and not the wires themselves. You can also split the two cores of the cable a little by simply pulling them apart.
 
     ![](images/step1_point2_wires.jpg)
 

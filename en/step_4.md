@@ -22,11 +22,11 @@ Inflate a balloon so it's nice and full, then tie a knot in it.
 
 --- task ---
 
-Take two wires, each about 2 metres in length and strip both ends, so the bare wires is visible.
+Take two wires, each about 2 meters in length and strip both ends, so the bare wires is visible.
 
-![](images/step1_point2_wires.jpg)
+![2-core speaker cable](images/step1_point2_wires.jpg)
 
-![](images/step1_point2_strippedwires.jpg)
+![2-core speaker cable, with stripped ends](images/step1_point2_strippedwires.jpg)
 
 --- /task ---
 
@@ -36,7 +36,7 @@ Take a 12Ω resistor and the stripped end of the wire. Twist one wire of the cab
 
 Make sure that there's a firm connection; you can even wrap electrical tape around the twisted wire to ensure it stays in place.
 
-![](images/step1_point3_resistor.jpg)
+![A resistor secured to speaker cable](images/step1_point3_resistor.jpg)
 
 --- /task ---
 
@@ -44,9 +44,9 @@ Make sure that there's a firm connection; you can even wrap electrical tape arou
 
 Take some more electrical tape (it doesn't matter what colour you use) and tape the resistor firmly onto the most stretched part of the balloon; that's the balloon's side, as in the picture below. It's important that this resistor is firmly touching the balloon, so stick it on carefully.
 
-![](images/step1_point4_positionofresistor.jpg)
+![A resistor secured to the side of a balloon](images/step1_point4_positionofresistor.jpg)
 
-![](images/step1_point4_tapedresistor.jpg)
+![The resistor secured with even more tape!](images/step1_point4_tapedresistor.jpg)
 
 Now tie some string onto the knot of your balloon and hang it from the ceiling using tape or Blu-Tack.
 
