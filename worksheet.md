@@ -6,7 +6,7 @@ To pop balloons you might usually use a pin. Here you'll be doing the same, but 
 
 First, we'll wire our push button up to the Raspberry Pi.
 
-1. Take a male-to-female jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
+1. Take a pin-to-socket jumper cable and connect the Raspberry Pi's ground pin to the breadboard to make a ground rail:
 
     ![](images/connect-ground-rail.png)
 
@@ -154,7 +154,7 @@ Now we've completed our circuit we'll need to change our code to trigger the tra
 
 ## Set up more balloons
 
-Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, another resistor, three male-to-male jumpers, one male-to-female jumper, and space on your breadboard.
+Popping one balloon is good, but popping more balloons is so much better! For each extra balloon you'll need another transistor, another resistor, three pin-to-pin jumpers, one pin-to-socket jumper, and space on your breadboard.
 
 1. Set up the first balloon as before, replacing the old resistor (it's now burned out!). Leave the rest of the cabling as it is.
 

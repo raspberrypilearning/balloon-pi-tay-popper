@@ -1,9 +1,9 @@
 - name: 1 x Solderless breadboard
   img: breadboard
-- name: 3 (or more) x Male-to-female jumper leads
-  img: jumper-male-to-female
-- name: 4 (or more) x Male-to-male jumper leads
-  img: jumper-male-to-male
+- name: 3 (or more) x Pin-to-socket jumper leads
+  img: jumper-pin-to-socket
+- name: 4 (or more) x Pin-to-pin jumper leads
+  img: jumper-pin-to-pin
 - name: 1 x Tactile button
   img: tactile-push-button
 - name: 1 x Battery snap
