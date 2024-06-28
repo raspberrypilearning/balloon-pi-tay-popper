@@ -21,7 +21,7 @@ title: What you will need
   
 For each balloon:
 * 1 x pin-to-pin jumper lead
-* 2-core speaker cable (2m strip)
+* 1 x 2m strip of 2-core speaker cable
 * 1 x 12Ω resistor
 * 1 x 330Ω resistor
 * 1 x BC635 transistor
