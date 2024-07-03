@@ -11,6 +11,22 @@ Your browser does not support the video tag.
 
 ---
 
+title: Safety note
+
+---
+
+In this project, you will heat a 12Ω resistor so that it pops a balloon.
+
+- Do not touch the resistor when the circuit is triggered. It will get VERY hot.
+- The transistor may also get hot.
+- The balloon will make a loud noise when it pops, which may be distressing for some people.
+
+--- /collapse ---
+
+--- collapse ---
+
+---
+
 title: What you will need
 
 ---
