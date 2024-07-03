@@ -20,7 +20,8 @@ title: What you will need
 * 1 x Tactile button
   
 For each balloon:
-* 1 x pin-to-pin jumper lead
+* 4 x pin-to-pin jumper leads
+* 3 x pin-to-socket jumper leads
 * 1 x 2m strip of 2-core speaker cable
 * 1 x 12Ω resistor
 * 1 x 330Ω resistor
