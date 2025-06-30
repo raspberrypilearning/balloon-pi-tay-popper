@@ -30,6 +30,5 @@ steps:
 - title: Code more balloons
   completion:
   - internal
-- title: What can you do now?
   completion:
   - external
